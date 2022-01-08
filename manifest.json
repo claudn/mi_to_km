@@ -1,0 +1,17 @@
+{
+  "name": "Miles to Km",
+  "description": "Browser extension that converts miles to km as well as mi/min to km/min for running",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Claudia Nguyen",
+  "content_scripts":
+  [
+	{
+		"matches":["*://*/*"],
+		"all_frames":true,
+		"js":["content_script.js"],
+		"run_at":"document_end"
+	}
+  ]
+
+}
